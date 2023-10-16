@@ -1,0 +1,26 @@
+<!-- FILEPATH: templates/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GeoJSON Column Editor</title>
+</head>
+<body>
+    <h1>GeoJSON Column Editor</h1>
+    <form action="/process" method="POST" enctype="multipart/form-data">
+        <label for="file">Select a GeoJSON file:</label>
+        <input type="file" id="file" name="file"><br><br>
+        <label for="old_col_name">Enter the name of the column to be changed:</label>
+        <input type="text" id="old_col_name" name="old_col_name"><br><br>
+        <label for="new_col_name">Enter the new name for the column:</label>
+        <input type="text" id="new_col_name" name="new_col_name"><br><br>
+        <label for="new_data_type">Select the new data type for the column:</label>
+        <select id="new_data_type" name="new_data_type">
+            <option value="int">Integer</option>
+            <option value="float">Float</option>
+            <option value="str">String</option>
+            <option value="bool">Boolean</option>
+        </select><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
