@@ -1,2 +1,2 @@
 Flask==2.2.5
-geopandas==0.14.0
+geopandas==0.10.2
